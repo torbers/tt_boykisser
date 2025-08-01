@@ -1,6 +1,7 @@
 /*
  * World's Smallest Boykisser
  * Author: torbers
+ * (the person below did all the work i just added semi-working color and. ya know. the picture)
  *
  * VGA Example Code
  * Copyright (c) 2024 Tiny Tapeout LTD
