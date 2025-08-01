@@ -39,7 +39,6 @@ module tt_um_torbers_boykisser (
 
   // Configuration
   wire cfg_tile = ui_in[0];
-  wire cfg_color = ui_in[1];
 
   // TinyVGA PMOD
   assign uo_out  = {hsync, B[0], G[0], R[0], vsync, B[1], G[1], R[1]};
