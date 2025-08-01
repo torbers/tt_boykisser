@@ -113,7 +113,7 @@ module tt_um_torbers_boykisser (
       logo_top <= 200;
       dir_y <= 0;
       dir_x <= 1;
-      color_index <= 0;
+      //color_index <= 0;
     end else begin
       prev_y <= pix_y;
       if (pix_y == 0 && prev_y != pix_y) begin
@@ -121,19 +121,19 @@ module tt_um_torbers_boykisser (
         logo_top  <= logo_top + (dir_y ? 1 : -1);
         if (logo_left - 1 == 0 && !dir_x) begin
           dir_x <= 1;
-          color_index <= color_index + 1;
+          //color_index <= color_index + 1;
         end
         if (logo_left + 1 == DISPLAY_WIDTH - LOGO_SIZE && dir_x) begin
           dir_x <= 0;
-          color_index <= color_index + 1;
+          //color_index <= color_index + 1;
         end
         if (logo_top - 1 == 0 && !dir_y) begin
           dir_y <= 1;
-          color_index <= color_index + 1;
+          //color_index <= color_index + 1;
         end
         if (logo_top + 1 == DISPLAY_HEIGHT - LOGO_SIZE && dir_y) begin
           dir_y <= 0;
-          color_index <= color_index + 1;
+          //color_index <= color_index + 1;
         end
       end
     end
